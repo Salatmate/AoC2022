@@ -5,7 +5,7 @@ raw_inp = file.read()
 file.close()
 
 def parse(inp):
-    #inp = inp.split('\n') #split into lines
+    inp = inp.split('\n') #split into lines
     #inp = [int(i) for i in inp] #convert each line into integer
     #inp = inp.split('\n\n')
     #inp = [[int(j) for j in i.split('\n')] for i in inp]
@@ -25,12 +25,22 @@ try: test = parse(test)
 except Exception: pass
 
 def part1(inp):
-    pass
+    ans = 0
+    print(ans)
 
 def part2(inp):
-    pass
+    ans = 0
+    print(ans)
     
 print('Part 1:')
 part1(inp)
+try:
+    print('Part 1 Test:')
+    part1(test)
+except Exception: pass
 print('Part 2:')
 part2(inp)
+try:
+    print('Part 2 Test:')
+    part2(test)
+except Exception: pass
