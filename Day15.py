@@ -79,8 +79,8 @@ def part2(inp):
             ax,ay,amh = sensors[i]
             bx,by,bmh = sensors[j]
             if (aoc.manhattan(ax,ay,bx,by) == amh+bmh+2):
-                p1 = (ax+amh*sign(bx-ax)+1,ay)
-                p2 = (ax,ay+amh*sign(by-ay)+1)
+                p1 = (ax+(amh+1)*sign(bx-ax),ay)
+                p2 = (ax,ay+(amh+1)*sign(by-ay))
                 lines += [(p1,p2)]
     for i in range(len(lines)):
         for j in range(i+1,len(lines)):
